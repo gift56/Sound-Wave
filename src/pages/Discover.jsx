@@ -13,7 +13,13 @@ const Discover = () => {
           onChange={() => {}}
           value=""
           className="bg-black text-gray-300 p-3 text-sm rounded-lg outline-none sm:mt-0 mt-5"
-        ></select>
+        >
+          {genres.map((genre) => (
+            <option value={genre.value} key={genre.value}>
+              {genre.title}
+            </option>
+          ))}
+        </select>
       </div>
     </div>
   );
