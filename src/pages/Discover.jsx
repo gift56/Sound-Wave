@@ -9,7 +9,9 @@ const Discover = () => {
         <h2 className="font-bold text-3xl text-white text-left">
           Discover {genreTitle}
         </h2>
-        <select></select>
+        <select onChange={() => {}} value="" className="bg-black">
+
+        </select>
       </div>
     </div>
   );
