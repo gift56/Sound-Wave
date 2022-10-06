@@ -1,4 +1,3 @@
-
 const PlayPause = () => (
   <div>Loader</div>
 );
