@@ -1,4 +1,3 @@
-
 const RelatedSongs = () => (
   <div>Loader</div>
 );
