@@ -15,4 +15,5 @@ fetch("https://shazam-core.p.rapidapi.com/v1/charts/world", options)
 
 export const shazamCoreApi = createApi({
   reducerPath: "shazamCoreApi",
+  baseQuery:fetchBaseQuery({})
 });
