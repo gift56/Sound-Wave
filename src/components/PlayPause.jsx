@@ -1,3 +1,5 @@
+import { FaPauseCircle, FaPlayCircle } from "react-icons/fa";
+
 const PlayPause = ({
   song,
   handlePause,
