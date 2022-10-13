@@ -1,9 +1,9 @@
 import { loader } from "../assets";
 
 const Loader = ({ title }) => (
-  <div className="w-full flex justify-center items-center flex-col">
+  <div className="w-full flex justify-center items-center flex-col gap-3">
     <img src={loader} alt="loader" className="w-32 h-32 object-contain" />
-    <h1>{title || "Loading..."}</h1>
+    <h1 className="font-bold text-2xl text-white">{title || "Loading..."}</h1>
   </div>
 );
 
