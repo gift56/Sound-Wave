@@ -27,7 +27,15 @@ const SongCard = ({ i, song }) => {
           <Link to={`/song/${song?.key}`}>{song?.title}</Link>
         </p>
         <p className="text-sm text-gray-300 mt-1 truncate">
-          <Link>{song?.subtitle}</Link>
+          <Link
+            to={
+              song.artists
+                ? `/artists/${song?.artists[0]?.adamid}`
+                : "/top-artist"
+            }
+          >
+            {song?.subtitle}
+          </Link>
         </p>
       </div>
     </div>
