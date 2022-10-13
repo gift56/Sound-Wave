@@ -1,5 +1,5 @@
-const Loader = () => (
-  <div>Loader</div>
-);
+import { loader } from "../assets";
+
+const Loader = () => <div></div>;
 
 export default Loader;
