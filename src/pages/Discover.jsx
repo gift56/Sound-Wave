@@ -4,6 +4,8 @@ import { useGetTopChartsQuery } from "../redux/services/shazamCore";
 import { useDispatch, useSelector } from "react-redux";
 
 const Discover = () => {
+  const dispatch = useDispatch();
+  const {} = useSelector();
   const { data, isFetching, error } = useGetTopChartsQuery();
   const genreTitle = "Pop";
 
