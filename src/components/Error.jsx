@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Error = () => (
-  <div>Error</div>
+  <div className='w-full flex justify-center items-center'></div>
 );
 
 export default Error;
