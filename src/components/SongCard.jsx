@@ -17,7 +17,9 @@ const SongCard = ({ i, song }) => {
               ? "flex bg-black bg-opacity-70"
               : "hidden"
           }`}
-        ></div>
+        >
+          <PlayPause />
+        </div>
       </div>
     </div>
   );
