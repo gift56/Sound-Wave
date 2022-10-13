@@ -6,6 +6,12 @@ import { links } from "../assets/constants";
 
 const Sidebar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  return (
+    <>
+      <div></div>
+    </>
+  );
 };
 
 export default Sidebar;
