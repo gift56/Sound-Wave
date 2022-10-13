@@ -1,5 +1,7 @@
 import { loader } from "../assets";
 
-const Loader = () => <div></div>;
+const Loader = ({title}) => <div className="w-full flex justify-center items-center flex-col">
+
+</div>;
 
 export default Loader;
