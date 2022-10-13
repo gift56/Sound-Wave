@@ -22,6 +22,9 @@ const SongCard = ({ i, song }) => {
         </div>
         <img src={song.images?.coverart} alt="song_img" />
       </div>
+      <div className="mt-4 flex flex-col">
+
+      </div>
     </div>
   );
 };
