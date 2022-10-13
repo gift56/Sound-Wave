@@ -1,6 +1,7 @@
 import { Error, Loader, SongCard } from "../components";
 import { genres } from "../assets/constants";
 import { useGetTopChartsQuery } from "../redux/services/shazamCore";
+import { useDispatch, useSelector } from "react-redux";
 
 const Discover = () => {
   const { data, isFetching, error } = useGetTopChartsQuery();
@@ -8,7 +9,7 @@ const Discover = () => {
 
   if (isFetching) return <Loader title="Loading Songs...." />;
 
-  if (error) return <Error  />;
+  if (error) return <Error />;
 
   return (
     <div className="flex flex-col">
