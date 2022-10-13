@@ -4,7 +4,6 @@ import PlayPause from "./PlayPause";
 import { playPause, setActiveSong } from "../redux/features/playerSlice";
 
 const SongCard = ({ i, song, activeSong, isPlaying, data }) => {
-
   const handlePlayClick = () => {};
 
   const handlePauseClick = () => {};
@@ -26,6 +25,8 @@ const SongCard = ({ i, song, activeSong, isPlaying, data }) => {
             song={song}
             handlePause={handlePauseClick}
             handlePlay={handlePlayClick}
+            isPlaying={isPlaying}
+            activeSong={activeSong}
           />
         </div>
         <img src={song.images?.coverart} alt="song_img" />
