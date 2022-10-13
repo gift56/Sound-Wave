@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 
 const Discover = () => {
   const dispatch = useDispatch();
-  const {} = useSelector();
+  const {} = useSelector((state) => state.player);
   const { data, isFetching, error } = useGetTopChartsQuery();
   const genreTitle = "Pop";
 
