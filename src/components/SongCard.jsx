@@ -18,7 +18,7 @@ const SongCard = ({ i, song }) => {
               : "hidden"
           }`}
         >
-          <PlayPause />
+          <PlayPause song={song} handlePause={handlePauseClick} />
         </div>
         <img src={song.images?.coverart} alt="song_img" />
       </div>
