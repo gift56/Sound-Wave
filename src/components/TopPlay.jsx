@@ -64,7 +64,25 @@ const TopPlay = () => {
             <p className="text-gray-300 cursor-pointer text-base">see more</p>
           </Link>
         </div>
-        <Swiper slidesPerView="auto" ></Swiper>
+        <Swiper
+          slidesPerView="auto"
+          spaceBetween={15}
+          freeMode
+          centeredSlides
+          centeredSlidesBounds
+          modules={[FreeMode]}
+          className="mt-4"
+        >
+          {topPlays?.map((song, i) => (
+            <SwiperSlide
+              key={song?.key}
+              style={{ width: "25%", height: "auto" }}
+              className="shadow-lg rounded-full animate-slideright"
+            >
+              
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </div>
   );
