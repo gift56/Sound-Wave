@@ -9,7 +9,14 @@ import { useGetTopChartsQuery } from "../redux/services/shazamCore";
 import "swiper/css";
 import "swiper/css/free-mode";
 
-const TopChartCard = ({ song, i }) => (
+const TopChartCard = ({
+  song,
+  i,
+  handlePauseClick,
+  handlePlayClick,
+  isPlaying,
+  activeSong,
+}) => (
   <div
     key={i}
     className="flex w-full items-center hover:bg-[#4c426e] rounded-lg cursor-pointer mb-2 py-2 p-4"
