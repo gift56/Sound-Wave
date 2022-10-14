@@ -14,7 +14,10 @@ const TopChartCard = ({ song, i }) => (
     key={i}
     className="flex w-full items-center hover:bg-[#4c426e] rounded-lg cursor-pointer mb-2 py-2 p-4"
   >
-    <h3 className="font-bold text-white mr-3 text-base">{i + 1 }.</h3>
+    <h3 className="font-bold text-white mr-3 text-base">{i + 1}.</h3>
+    <div className="flex-1 flex justify-between items-center">
+      <img src={song?.images.coverart} alt="" />
+    </div>
   </div>
 );
 
