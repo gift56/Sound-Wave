@@ -23,7 +23,14 @@ const TopChartCard = ({ song, i }) => (
       />
       <div className="flex flex-1 flex-col justify-center mx-3">
         <Link to={`/songs/${song.key}`}>
-          <p className="font-bold text-lg text-white">{song?.title}</p>
+          <p className="font-bold text-lg md:text-xl text-white">
+            {song?.title}
+          </p>
+        </Link>
+        <Link to={`/artists/${song?.artists[0].adamid}`}>
+          <p className="font-bold  text-white">
+            {song?.title}
+          </p>
         </Link>
       </div>
     </div>
