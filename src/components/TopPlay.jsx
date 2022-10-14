@@ -16,7 +16,10 @@ const TopChartCard = ({ song, i }) => (
   >
     <h3 className="font-bold text-white mr-3 text-base">{i + 1}.</h3>
     <div className="flex-1 flex justify-between items-center">
-      <img src={song?.images.coverart} alt="" />
+      <img src={song?.images.coverart} alt={song?.title} className="w-20 h-20 rounded-lg" />
+      <div className="flex flex-1 flex-col justify-center mx-3">
+        
+      </div>
     </div>
   </div>
 );
