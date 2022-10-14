@@ -9,7 +9,7 @@ const Sidebar = () => {
 
   return (
     <>
-      <div></div>
+      <div className="md:flex"></div>
     </>
   );
 };
