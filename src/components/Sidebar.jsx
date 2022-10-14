@@ -30,7 +30,7 @@ const Sidebar = () => {
         <NavLinks />
       </div>
       {/* Mobile side bar*/}
-      
+      <div className="absolute md:hidden block top-6 right-3"></div>
     </>
   );
 };
