@@ -3,11 +3,12 @@ import { NavLink } from "react-router-dom";
 import { RiCloseLine } from "react-icons/ri";
 import { logo } from "../assets";
 import { links } from "../assets/constants";
+import { iteratorSymbol } from "immer/dist/internal";
 
 const Navlinks = () => (
   <div className="mt-10 ">
     {links.map((link) => (
-      <NavLink></NavLink>
+      <NavLink>{link.name}</NavLink>
     ))}
   </div>
 );
