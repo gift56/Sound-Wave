@@ -7,7 +7,9 @@ import { links } from "../assets/constants";
 const NavLinks = () => (
   <div className="mt-10 ">
     {links.map((link) => (
-      <NavLink>{link.name}</NavLink>
+      <NavLink className="flex items-center justify-start my-8 text-sm font-medium text-gray-400 ">
+        {link.name}
+      </NavLink>
     ))}
   </div>
 );
