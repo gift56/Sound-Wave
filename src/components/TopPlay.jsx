@@ -11,7 +11,8 @@ import "swiper/css/free-mode";
 
 const TopPlay = () => {
   const dispatch = useDispatch();
-  const {} = useSelector((state) => state.player);
+  const { activeSong, isPlaying } = useSelector((state) => state.player);
+  const { data, isFetching, error } = useGetTopChartsQuery();
 };
 
 export default TopPlay;
