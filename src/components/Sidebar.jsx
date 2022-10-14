@@ -9,7 +9,7 @@ const Sidebar = () => {
 
   return (
     <>
-      <div className="md:flex"></div>
+      <div className="md:flex hidden"></div>
     </>
   );
 };
