@@ -25,6 +25,8 @@ const TopPlay = () => {
   const handlePauseClick = () => {
     dispatch(playPause(false));
   };
+
+  return <div ref={divRef}></div>;
 };
 
 export default TopPlay;
