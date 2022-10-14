@@ -28,9 +28,7 @@ const TopChartCard = ({ song, i }) => (
           </p>
         </Link>
         <Link to={`/artists/${song?.artists[0].adamid}`}>
-          <p className="font-bold  text-white">
-            {song?.title}
-          </p>
+          <p className="text-base mt-1 text-gray-300">{song?.subtitle}</p>
         </Link>
       </div>
     </div>
