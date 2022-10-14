@@ -8,6 +8,7 @@ const SongDetails = () => {
   const { songid } = useParams();
   const dispatch = useDispatch();
   const { activeSong, isPlaying } = useSelector((state) => state.player);
+  const { data: songData, isFetching: isFetchingSongDetails } = useGetSongDetailsQuery();
 
   console.log(songid);
   return (
@@ -15,9 +16,7 @@ const SongDetails = () => {
       {/* <DetailsHeader artistId={artistId} songData={songData} /> */}
       <div className="mb-10">
         <h2 className="text-white text-3xl font-bold">Lyrics:</h2>
-        <div className="mt-5">
-
-        </div>
+        <div className="mt-5"></div>
       </div>
     </div>
   );
