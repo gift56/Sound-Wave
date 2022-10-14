@@ -64,6 +64,9 @@ const TopPlay = () => {
             <p className="text-gray-300 cursor-pointer text-base">see more</p>
           </Link>
         </div>
+        <Swiper
+        
+        ></Swiper>
       </div>
     </div>
   );
