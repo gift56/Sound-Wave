@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { RiCloseLine } from "react-icons/ri";
 import { logo } from "../assets";
 import { links } from "../assets/constants";
+import { HiOutlineMenu } from "react-icons/hi";
 
 const NavLinks = ({ handleClick }) => (
   <div className="mt-10 ">
@@ -30,7 +31,9 @@ const Sidebar = () => {
         <NavLinks />
       </div>
       {/* Mobile side bar*/}
-      <div className="absolute md:hidden block top-6 right-3"></div>
+      <div className="absolute md:hidden block top-6 right-3">
+        {mobileMenuOpen ? <RiCloseLine /> : <HiOutlineMenu />}
+      </div>
     </>
   );
 };
