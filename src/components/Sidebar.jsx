@@ -9,6 +9,7 @@ const NavLinks = () => (
     {links.map((link) => (
       <NavLink
         key={link.name}
+        to={link.to}
         className="flex items-center justify-start my-8 text-sm font-medium text-gray-400 hover:text-cyan-400"
       >
         {link.name}
