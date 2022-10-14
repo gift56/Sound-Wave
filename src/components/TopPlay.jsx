@@ -9,8 +9,10 @@ import { useGetTopChartsQuery } from "../redux/services/shazamCore";
 import "swiper/css";
 import "swiper/css/free-mode";
 
-const TopChartCard = () => (
-  <div className="flex w-full items-center hover:bg-[#4c426e] rounded-lg cursor-pointer mb-2 py-2 p-4"></div>
+const TopChartCard = ({ song }) => (
+  <div className="flex w-full items-center hover:bg-[#4c426e] rounded-lg cursor-pointer mb-2 py-2 p-4">
+    {song.title}
+  </div>
 );
 
 const TopPlay = () => {
@@ -48,7 +50,7 @@ const TopPlay = () => {
         </div>
         <div className="mt-4 flex flex-col gap-1">
           {topPlays?.map((song, i) => (
-            <TopChartCard />
+            <TopChartCard song={song} key={i} />
           ))}
         </div>
       </div>
