@@ -11,6 +11,7 @@ import "swiper/css/free-mode";
 
 const TopPlay = () => {
   const dispatch = useDispatch();
+  const {} = useSelector((state) => state.player);
 };
 
 export default TopPlay;
