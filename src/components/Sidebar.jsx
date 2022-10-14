@@ -4,7 +4,13 @@ import { RiCloseLine } from "react-icons/ri";
 import { logo } from "../assets";
 import { links } from "../assets/constants";
 
-const Navlinks = () => <div></div>;
+const Navlinks = () => (
+  <div className="mt-10 ">
+    {links.map((link) => (
+      <NavLink />
+    ))}
+  </div>
+);
 
 const Sidebar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
