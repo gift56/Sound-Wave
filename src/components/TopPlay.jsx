@@ -9,6 +9,8 @@ import { useGetTopChartsQuery } from "../redux/services/shazamCore";
 import "swiper/css";
 import "swiper/css/free-mode";
 
-const TopPlay = () => <div>TopPlay</div>;
+const TopPlay = () => {
+  const dispatch = useDispatch();
+};
 
 export default TopPlay;
