@@ -32,7 +32,11 @@ const Sidebar = () => {
       </div>
       {/* Mobile side bar*/}
       <div className="absolute md:hidden block top-6 right-3">
-        {mobileMenuOpen ? <RiCloseLine /> : <HiOutlineMenu />}
+        {mobileMenuOpen ? (
+          <RiCloseLine className="w-6 h-6 text-white mr-2" />
+        ) : (
+          <HiOutlineMenu className="w-6 h-6 text-white mr-2" />
+        )}
       </div>
     </>
   );
