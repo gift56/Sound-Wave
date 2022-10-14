@@ -15,6 +15,8 @@ const TopPlay = () => {
   const { data } = useGetTopChartsQuery();
   const divRef = useRef(null);
 
+  const topPlays = data?.slice(0, 5);
+
   const handlePlayClick = () => {
     dispatch(setActiveSong({ song, data, i }));
     dispatch(playPause(true));
@@ -23,7 +25,6 @@ const TopPlay = () => {
   const handlePauseClick = () => {
     dispatch(playPause(false));
   };
-  
 };
 
 export default TopPlay;
