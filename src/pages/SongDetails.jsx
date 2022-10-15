@@ -45,7 +45,7 @@ const SongDetails = () => {
           )}
         </div>
       </div>
-      <RelatedSongs  />
+      <RelatedSongs data={data} />
     </div>
   );
 };
