@@ -29,6 +29,9 @@ const AroundYou = () => {
       <h2 className="text-3xl font-bold text-white text-left mt-4 mb-10">
         Around You
       </h2>
+      <div>
+        
+      </div>
     </div>
   );
 };
