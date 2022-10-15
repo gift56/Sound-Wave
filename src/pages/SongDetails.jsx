@@ -45,7 +45,7 @@ const SongDetails = () => {
           )}
         </div>
       </div>
-      <RelatedSongs data={data} />
+      <RelatedSongs data={data} isPlaying={isPlaying} activeSong={activeSong} />
     </div>
   );
 };
