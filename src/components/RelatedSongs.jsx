@@ -1,3 +1,5 @@
+import SongBar from "./SongBar";
+
 const RelatedSongs = ({
   data,
   isPlaying,
