@@ -20,6 +20,13 @@ const DetailsHeader = ({ songData, artistId, artistData }) => {
           <p className="font-bold text-white sm:text-3xl text-xl">
             {artistId ? artist?.name : songData?.title}
           </p>
+          {!artistId && (
+            <Link>
+              <p className="text-gray-400 text-base mt-2">
+                {songData?.subtitle}
+              </p>
+            </Link>
+          )}
         </div>
       </div>
     </div>
