@@ -8,11 +8,13 @@ const AroundYou = () => {
   const [country, setCountry] = useState("");
   const [loading, setLoading] = useState(true);
   const { activeSong, isPlaying } = useSelector((state) => state.player);
-  const {} = useGetSongsByCountryQuery();
+  const { data, isFetching, error } = useGetSongsByCountryQuery();
 
   useEffect(() => {
     axios
-      .get(`https://geo.ipify.org/api/v2/country?apiKey=at_ZuX4aqM0TYQoRKvcrIMNR0Lrjnryz&ipAddress=8.8.8.8`)
+      .get(
+        `https://geo.ipify.org/api/v2/country?apiKey=at_ZuX4aqM0TYQoRKvcrIMNR0Lrjnryz&ipAddress=8.8.8.8`
+      )
       .then((res) => setCountry(res?.data?.location?.country))
       .catch((err) => console.log("Error: ", err))
       .finally(() => setLoading(false));
