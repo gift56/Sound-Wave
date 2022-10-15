@@ -54,7 +54,13 @@ const SongDetails = () => {
           )}
         </div>
       </div>
-      <RelatedSongs data={data} isPlaying={isPlaying} activeSong={activeSong} />
+      <RelatedSongs
+        data={data}
+        isPlaying={isPlaying}
+        activeSong={activeSong}
+        handlePauseClick={handlePauseClick}
+        handlePlayClick={handlePlayClick}
+      />
     </div>
   );
 };
