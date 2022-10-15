@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 
 const DetailsHeader = ({ songData, artistId, artistData }) => {
+  const artist = artistData?.artists[artistId]?.attributes;
+
   return (
     <div className="relative w-full flex flex-col">
       <div className="w-full bg-gradient-to-l from-transparent to-black sm:h-48 h-28" />
@@ -8,7 +10,7 @@ const DetailsHeader = ({ songData, artistId, artistData }) => {
         <img
           src={
             artistId
-              ? artistData?.artists[artistId].attributes?.artwork?.url
+              ? artist?.artwork?.url
                   .replace("{w}", "500")
                   .replace("{h}", "500")
               : songData?.images?.coverart
@@ -16,6 +18,10 @@ const DetailsHeader = ({ songData, artistId, artistData }) => {
           alt="art"
           className="sm:w-48 w-28 sm:h-48 h-28 rounded-full object-cover border-2 shadow-xl shadow-black"
         />
+        <div className="ml-5">
+          {/* <p>{artistId
+              ? artistData?.artists[artistId].attributes?.name}</p> */}
+        </div>
       </div>
     </div>
   );
