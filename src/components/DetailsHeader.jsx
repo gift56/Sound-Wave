@@ -1,5 +1,5 @@
-const DetailsHeader = ({ songData, artistId }) => {
-  return <div></div>;
+const DetailsHeader = ({ songData, artistId,artistData }) => {
+  return <div></div>
 };
 
 export default DetailsHeader;
