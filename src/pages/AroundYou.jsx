@@ -8,7 +8,9 @@ const AroundYou = () => {
   const [loading, setLoading] = useState(true);
   const { activeSong, isPlaying } = useSelector((state) => state.player);
 
-  useEffect(() => {}, [country]);
+  useEffect(() => {
+    
+  }, [country]);
 
   return <div></div>;
 };
