@@ -20,9 +20,15 @@ const SongDetails = () => {
         <h2 className="text-white text-3xl font-bold">Lyrics:</h2>
         <div className="mt-5">
           {songData?.sections[1].type === "LYRICS" ? (
-            songData?.sections[1].text.map((line, i) => <p key={i} className="">{line}</p>)
+            songData?.sections[1].text.map((line, i) => (
+              <p key={i} className="text-gray-400 text-base my-1">
+                {line}
+              </p>
+            ))
           ) : (
-            <p className="">Sorry, no lyrics found!</p>
+            <p className="text-gray-400 text-base my-1">
+              Sorry, no lyrics found!
+            </p>
           )}
         </div>
       </div>
