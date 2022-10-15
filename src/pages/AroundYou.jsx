@@ -8,7 +8,7 @@ const AroundYou = () => {
   const [country, setCountry] = useState("");
   const [loading, setLoading] = useState(true);
   const { activeSong, isPlaying } = useSelector((state) => state.player);
-  const { data, isFetching, error } = useGetSongsByCountryQuery();
+  const { data, isFetching, error } = useGetSongsByCountryQuery(country);
 
   useEffect(() => {
     axios
@@ -19,8 +19,6 @@ const AroundYou = () => {
       .catch((err) => console.log("Error: ", err))
       .finally(() => setLoading(false));
   }, [country]);
-
-  console.log(country);
 
   return <div></div>;
 };
