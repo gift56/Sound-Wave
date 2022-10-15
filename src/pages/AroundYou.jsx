@@ -9,7 +9,11 @@ const AroundYou = () => {
   const { activeSong, isPlaying } = useSelector((state) => state.player);
 
   useEffect(() => {
-    
+    axios
+      .get("http://wrongurl")
+      .then((res) => setCountry(res?.data?.location?.country))
+      .catch((err) => console.log("Error: ", err))
+      .finally(() => setLoading(false));
   }, [country]);
 
   return <div></div>;
