@@ -21,7 +21,7 @@ const SongDetails = () => {
     songid,
   });
 
-  if (isFetchingSongDetails || isFetchingRelatedSongs) return <Loader />;
+  if (isFetchingSongDetails || isFetchingRelatedSongs) return <Loader title="" />;
 
   return (
     <div className="flex flex-col">
