@@ -23,7 +23,12 @@ const AroundYou = () => {
   if (isFetching && loading) return <Loader title="Loading songs Around you" />;
 
   if (error && country) return <Error />;
-  return <div></div>;
+
+  return (
+    <div className="flex flex-col">
+        <h2>Around You</h2>
+    </div>
+  )
 };
 
 export default AroundYou;
