@@ -8,12 +8,12 @@ const TopCharts = () => {
 
   if (isFetching) return <Loader title="Loading top Charts" />;
 
-  if (error && country) return <Error />;
+  if (error) return <Error />;
 
   return (
     <div className="flex flex-col">
       <h2 className="text-3xl font-bold text-white text-left mt-4 mb-10">
-        Around You {` `} <span className="font-black">{country}</span>
+       Discover Top Charts
       </h2>
       <div className="flex flex-wrap sm:justify-start justify-center gap-8">
         {data?.map((song, i) => (
