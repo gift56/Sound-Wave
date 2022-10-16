@@ -1,11 +1,12 @@
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { Error, Loader, SongCard } from "../components";
-import { useGetTopChartsQuery } from "../redux/services/shazamCore";
+import { useGetSongsBySearchQuery } from "../redux/services/shazamCore";
 
 const Search = () => {
+  const { searchTerm } = useParams();
   const { activeSong, isPlaying } = useSelector((state) => state.player);
-  const { data, isFetching, error } = useGetTopChartsQuery();
+  const { data, isFetching, error } = useGetSongsBySearchQuery(searchTerm);
 
   if (isFetching) return <Loader title="Loading top Charts" />;
 
