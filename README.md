@@ -1,4 +1,4 @@
-# Project Playbeasts
+# Project Playbeats
 
 Develop an elegant React.js Music Application.
 
