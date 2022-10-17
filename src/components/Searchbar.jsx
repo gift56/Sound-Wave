@@ -16,7 +16,7 @@ const Searchbar = () => {
       autoComplete="off"
       className="p-2 text-gray-400 focus-within:text-gray-600"
     >
-      <label htmlFor="search-field" className="visibility: hidden">
+      <label htmlFor="search-field" className="invisible w-full mb-6">
         Search all songs
       </label>
       <div className="flex justify-start items-center">
