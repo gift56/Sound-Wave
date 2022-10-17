@@ -10,7 +10,7 @@ const Search = () => {
 
   const songs = data?.tracks?.hits?.map((song) => song.track);
 
-  if (isFetching) return <Loader title="Loading top Charts" />;
+  if (isFetching) return <Loader title="Loading Search Terms..." />;
 
   if (error) return <Error />;
 
