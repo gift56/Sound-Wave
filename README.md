@@ -45,7 +45,7 @@ To set up a development environment, please follow these steps:
 1. Clone the repo
 
    ```shell
-    git clone https://github.com/JavaScript-Mastery-PRO/project1_team4_repository.git
+    git clone https://github.com/gift56/Sound-Wave
    ```
 
 2. Change directory to the project directory
@@ -76,7 +76,7 @@ To set up a development environment, please follow these steps:
 
 ## Issues
 
-You've found a bug in the source code, a mistake in the documentation or maybe you'd like a new feature? You can help us by [submitting an issue on GitHub](https://github.com/orgs/JavaScript-Mastery-PRO/projects/8 || https://github.com/gift56). Before you create an issue, make sure to search the issue archive -- your issue may have already been addressed!
+You've found a bug in the source code, a mistake in the documentation or maybe you'd like a new feature? You can help us by [submitting an issue on GitHub](https://github.com/gift56). Before you create an issue, make sure to search the issue archive -- your issue may have already been addressed!
 
 Please try to create bug reports that are:
 
