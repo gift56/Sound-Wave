@@ -19,7 +19,7 @@ const Searchbar = () => {
       <label htmlFor="search-field" className="invisible w-full mb-6">
         Search all songs
       </label>
-      <div className="flex justify-start items-center">
+      <div className="flex justify-start items-center mt-7 sm:mt-0">
         <FiSearch className="w-5 h-5 ml-4" />
         <input
           type="search"
